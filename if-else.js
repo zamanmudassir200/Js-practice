@@ -12,3 +12,25 @@ if (age < 18) {
 } else {
   console.log("now you can apply for license");
 }
+
+// nested if else
+
+let a = 10,
+  b = 20,
+  c = 40;
+
+if (a >= b) {
+  if (a >= c) {
+    console.log("a is greater");
+  } else {
+    //a<=c
+    console.log("c is greater");
+  }
+} else {
+  if (b >= c) {
+    console.log("b is greater");
+  } else {
+    //b<=c
+    console.log("c is greater");
+  }
+}

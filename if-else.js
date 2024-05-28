@@ -35,7 +35,16 @@ if (a >= b) {
   }
 }
 
-let x = 10,
-  y = 20;
-
-console.log(x, y);
+// 1- 100
+let num = 50;
+if (num >= 1 && num <= 100) {
+  if (num > 50 && num <= 100) {
+    console.log(`${num} is greater than 50`);
+  } else if (num == 50) {
+    console.log(`${num} is equal to 50`);
+  } else {
+    console.log(`${num} is less than 50`);
+  }
+} else {
+  console.log("Invalid number");
+}

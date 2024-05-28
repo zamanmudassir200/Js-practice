@@ -32,3 +32,16 @@ switch (quarter) {
   default:
     console.log("invalid quarter");
 }
+
+// color guessing game
+const favColor = "purple";
+let guess = prompt("Enter color name: ");
+
+while (guess != favColor && guess != "quit") {
+  guess = prompt("Try Again ");
+}
+if (guess === favColor) {
+  console.log("You WON. You guessed the correct color");
+} else {
+  console.log("You Lose. You quit the game");
+}

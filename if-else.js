@@ -46,5 +46,5 @@ if (num >= 1 && num <= 100) {
     console.log(`${num} is less than 50`);
   }
 } else {
-  console.log("Invalid number");
+  console.log("Invalid ");
 }

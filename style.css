@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 2rem;
+}
+.container {
+  padding: 1rem;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+  height: 100vh;
+}
+.duas {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  /* border: 1px solid blue; */
+  width: 100%;
+  justify-content: center;
+  height: 250px;
+  padding: 1rem 2rem;
+  align-items: center;
+  border-radius: 10rem;
+}
+h1 {
+  text-align: center;
+}
+#duaBtn {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: green;
+}

@@ -22,24 +22,49 @@
 //? Problem: Write a function reverseString that takes a string as an argument and returns the string reversed.
 
 // const reverseString = (str) => {
+//   let reverse = "";
 //   for (let i = str.length - 1; i >= 0; i--) {
-//     console.log(str[i]);
+//     reverse += str[i];
 //   }
+//   console.log(reverse);
 // };
-// reverseString("MudassirZaman");
+// reverseString("ABBAXI");
 
 //? Problem: Write a function factorial that takes a number as an argument and returns its factorial.
 
-const factorial = (num) => {
-  if (num === 0 || num === 1) {
-    console.log(1);
-  } else if (num === undefined) {
-    console.log("Please write a number as an argument");
-  } else {
-    for (let i = num - 1; i >= 1; --i) {
-      num = num * i;
-    }
-    console.log(`Factorial is ${num}`);
-  }
-};
-factorial(9);
+// const factorial = (num) => {
+//   if (num === 0 || num === 1) {
+//     console.log(1);
+//   } else if (num === undefined) {
+//     console.log("Please write a number as an argument");
+//   } else {
+//     for (let i = num - 1; i >= 1; --i) {
+//       num = num * i;
+//     }
+//     console.log(`The Factorial is ${num}`);
+//   }
+// };
+// factorial(7);
+
+//? Problem: Write a function findLargest that takes an array of numbers as an argument and returns the largest number in the array.
+// const arr = [1, 4, 7, 8, 3];
+// const findLargest = (arr) => {
+//   console.log(Math.max(arr.filter((num) => num)));
+// };
+// findLargest(arr);
+
+//? Problem: Write a function isPalindrome that takes a string as an argument and returns true if the string is a palindrome, and false otherwise.
+
+// const isPalindrome = (str) => {
+//   let reverse = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reverse += str[i];
+//   }
+//   if (reverse === str) {
+//     console.log(`The given string ("${str}") is Palindrome `);
+//   } else {
+//     console.log(`The given string ("${str}") is not a Palindrome `);
+//   }
+// };
+
+// isPalindrome("level");

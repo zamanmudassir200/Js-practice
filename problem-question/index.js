@@ -71,17 +71,54 @@
 
 //? Problem: Write a function fizzBuzz that prints numbers from 1 to 100. But for multiples of 3, print "Fizz" instead of the number, and for the multiples of 5, print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
 
-const fizzBuzz = () => {
-  for (let i = 1; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
-    } else if (i % 5 === 0) {
-      console.log("Buzz");
-    } else if (i % 3 === 0) {
-      console.log("Fizz");
-    } else {
-      console.log(i);
-    }
+// const fizzBuzz = () => {
+//   for (let i = 1; i <= 100; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       console.log("FizzBuzz");
+//     } else if (i % 5 === 0) {
+//       console.log("Buzz");
+//     } else if (i % 3 === 0) {
+//       console.log("Fizz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// };
+// fizzBuzz();
+
+//? Problem: Write a function removeDuplicates that takes an array of numbers as an argument and returns a new array with duplicate elements removed.
+// const arr = [1, 1, 3, 1, 4, 5, 2];
+// const removeDuplicates = (arr) => {
+// let duplicateArr = [];
+// const removedDuplicateElement = arr.reduce((acc, num) => {
+//   let duplicate = acc !== num || num !== acc;
+//   console.log(duplicate);
+//   return duplicateArr.push(duplicate);
+// });
+// console.log(removedDuplicateElement);
+// };
+// removeDuplicates(arr);
+
+//? Problem: Write a function countVowels that takes a string as an argument and returns the number of vowels in the string.
+
+const countVowels = (str) => {
+  let vowelMatched = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    console.log(str[i]);
+    let vowels = "aeiou";
+    let splittedVowels = vowels.split("");
+    splittedVowels.map((vowelLetter) => {
+      if (str[i] === vowelLetter) {
+        console.log(`${vowelLetter} Vowel matched with ${str[i]}`);
+        vowelMatched++;
+      } else {
+        console.log("No vowel matched");
+      }
+    });
   }
+  console.log(
+    `Number of Vowels matched in string =>("${str}"): ${vowelMatched}`
+  );
 };
-fizzBuzz();
+countVowels("Tahir");

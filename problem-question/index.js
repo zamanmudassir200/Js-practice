@@ -118,7 +118,9 @@ const countVowels = (str) => {
     });
   }
   console.log(
-    `Number of Vowels matched in string =>("${str}"): ${vowelMatched}`
+    `Number of ${
+      vowelMatched > 1 ? "Vowels" : "Vowel"
+    } matched in "${str}" : ${vowelMatched}`
   );
 };
-countVowels("Tahir");
+countVowels("us");

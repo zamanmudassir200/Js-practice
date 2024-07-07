@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+}
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  /* background: purple; */
+  border: 1px solid green;
+}
+.container {
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin: 0 auto;
+  background: green;
+  height: 100px;
+  border-radius: 50%;
+  animation: movingUp 5s forwards infinite;
+}
+
+@keyframes movingUp {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, -200px);
+    background: blue;
+    opacity: 0.7;
+  }
+  75% {
+    transform: translate(0, -200px);
+    background: gray;
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-300px);
+    background-color: purple;
+    opacity: 0.1;
+  }
+}

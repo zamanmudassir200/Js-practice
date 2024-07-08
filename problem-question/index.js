@@ -87,18 +87,18 @@
 // fizzBuzz();
 
 //? Problem: Write a function removeDuplicates that takes an array of numbers as an argument and returns a new array with duplicate elements removed.
-const arr = [1, 1, 3, 1, 4, 5, 2];
-const removeDuplicates = (arr) => {
-  let uniqueArray = [];
-  arr.forEach((num) => {
-    if (!uniqueArray.includes(num)) {
-      uniqueArray.push(num);
-    }
-  });
-  return uniqueArray;
-};
-const printUniqueArr = removeDuplicates(arr);
-console.log(printUniqueArr);
+// const arr = [1, 1, 3, 1, 4, 5, 2];
+// const removeDuplicates = (arr) => {
+//   let uniqueArray = [];
+//   arr.forEach((num) => {
+//     if (!uniqueArray.includes(num)) {
+//       uniqueArray.push(num);
+//     }
+//   });
+//   return uniqueArray;
+// };
+// const printUniqueArr = removeDuplicates(arr);
+// console.log(printUniqueArr);
 //? Problem: Write a function countVowels that takes a string as an argument and returns the number of vowels in the string.
 
 // const countVowels = (str) => {
@@ -124,3 +124,32 @@ console.log(printUniqueArr);
 //   );
 // };
 // countVowels("mudassir");
+
+//? Get user to input a number using prompt(). Check if the number is a multiple of 5 or not
+// let num = prompt("Enter a number: ");
+// num = Number(num);
+// let result =
+//   num % 5 === 0 ? `${num} is multiple of 5` : `${num} is NOT a multiple of 5`;
+// console.log(result);
+// console.log(typeof num);
+
+//? write a code which can give grades to students according to their marks.
+//? 80-100 = A
+//? 70 - 79 = B
+//? 60 - 69 = C
+//? 50 - 59 = D
+//? 0 - 49 = F
+
+// let marks = 89;
+
+// if (marks >= 80 && marks <= 100) {
+//   console.log("grade A");
+// } else if (marks >= 70 && marks <= 79) {
+//   console.log("grade B");
+// } else if (marks >= 60 && marks <= 69) {
+//   console.log("grade C");
+// } else if (marks >= 50 && marks <= 59) {
+//   console.log("grade D");
+// } else {
+//   console.log("grade F");
+// }

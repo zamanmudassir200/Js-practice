@@ -153,3 +153,13 @@
 // } else {
 //   console.log("grade F");
 // }
+
+//? how to find the length of a string without using length property
+
+const str = "MUDASSIRZAMAN";
+let length = 0;
+for (let char of str) {
+  console.log(char);
+  length++;
+}
+console.log(`Length of ${str} is ${length}`);

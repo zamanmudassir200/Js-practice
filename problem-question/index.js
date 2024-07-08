@@ -188,13 +188,20 @@
 
 //? create a game where you start with any random game number. Ask the user to keep guessing the game number untill the user enters correct number
 
-let randomNumber = Math.floor(Math.random() * 20);
-console.log(randomNumber);
-let userInput = prompt("Guess the number what am i thinking: ");
-while (userInput != randomNumber) {
-  userInput = prompt("Try again please 😊");
-  if (userInput == randomNumber) {
-    alert("Hurray! You have guessed the number");
-    break;
-  }
-}
+// let randomNumber = Math.floor(Math.random() * 20);
+// console.log(randomNumber);
+// let userInput = prompt("Guess the number what am i thinking: ");
+// while (userInput != randomNumber) {
+//   userInput = prompt("Try again please 😊");
+//   if (userInput == randomNumber) {
+//     alert("Hurray! You have guessed the number");
+//     break;
+//   }
+// }
+
+//? Prompt the user to enter their fullName. Generate a username for them based on the input. Start username with @, followed by their full name and ending with the full name length
+
+// let fullName = prompt("Please enter you full name");
+// let fullNameLength = fullName.length;
+// // console.log(`@${fullName}${fullName.length}`);
+// console.log(`@${fullName.concat(fullNameLength)}`);

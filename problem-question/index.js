@@ -156,10 +156,32 @@
 
 //? how to find the length of a string without using length property
 
-const str = "MUDASSIRZAMAN";
-let length = 0;
-for (let char of str) {
-  console.log(char);
-  length++;
+// const str = "MUDASSIRZAMAN";
+// let length = 0;
+// for (let char of str) {
+//   console.log(char);
+//   length++;
+// }
+// console.log(`Length of ${str} is ${length}`);
+
+// for in loop
+// const student = {
+//   name: "Mudassir Zaman",
+//   age: 23,
+//   cgpa: 3.0,
+//   isPass: true,
+// };
+
+// for (let i in student) {
+//   console.log(i, ":", student[i]);
+// }
+
+//? print all the even numbers from 0 to 100
+
+for (let num = 0; num <= 100; num++) {
+  if (num % 2 === 0) {
+    console.log("Even:", num);
+  } else {
+    console.log("Odd:", num);
+  }
 }
-console.log(`Length of ${str} is ${length}`);

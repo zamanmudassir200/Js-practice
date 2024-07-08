@@ -206,11 +206,21 @@
 // // console.log(`@${fullName}${fullName.length}`);
 // console.log(`@${fullName.concat(fullNameLength)}`);
 
-//? for a given array of marks of students -> [85,97,44,37,76,60]. Find the average marks of the entire class.
+//? For a given array of marks of students -> [85,97,44,37,76,60]. Find the average marks of the entire class.
 
-const marks = [85, 97, 44, 37, 76, 60];
-let sum = 0;
-for (let mark of marks) {
-  sum += mark;
+// const marks = [85, 97, 44, 37, 76, 60];
+// let sum = 0;
+// for (let mark of marks) {
+//   sum += mark;
+// }
+// console.log(`The avergae marks of entire class is ${sum / marks.length}`);
+
+//? For a given array with prices of 5 items -> [250,654,300,900,50]. All items have an offer of 10% OFF on them. Change the array to store final price after applying the offer.
+
+const items = [250, 654, 300, 900, 50];
+let discountedItems = [];
+console.log("Before 10% discount:", items);
+for (let item of items) {
+  discountedItems.push(item - (item * 10) / 100);
 }
-console.log(`The avergae marks of entire class is ${sum / marks.length}`);
+console.log("After 10% discount:", discountedItems);

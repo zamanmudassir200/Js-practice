@@ -259,21 +259,48 @@
 // console.log(companies);
 
 //? create a function using function keyword that takes a string as an argument & returns the number of vowels in the string
-function VowelsCounter(str) {
-  let Vowelcount = 0;
-  for (let char of str) {
-    if (
-      char.toLowerCase() === "a" ||
-      char.toLowerCase() === "e" ||
-      char.toLowerCase() === "i" ||
-      char.toLowerCase() === "o" ||
-      char.toLowerCase() === "u"
-    ) {
-      console.log(`${char} - Vowel matched`);
-      Vowelcount++;
-    }
-  }
-  console.log(`Total number of vowels in ${str} : ${Vowelcount}`);
-}
+// function VowelsCounter(str) {
+//   let Vowelcount = 0;
+//   for (let char of str) {
+//     if (
+//       char.toLowerCase() === "a" ||
+//       char.toLowerCase() === "e" ||
+//       char.toLowerCase() === "i" ||
+//       char.toLowerCase() === "o" ||
+//       char.toLowerCase() === "u"
+//     ) {
+//       console.log(`${char} - Vowel matched`);
+//       Vowelcount++;
+//     }
+//   }
+//   console.log(`Total number of vowels in ${str} : ${Vowelcount}`);
+// }
 
-VowelsCounter("MUDASSIR");
+// VowelsCounter("MUDASSIR");
+
+//? we are given array of marks of students. Filter out od the marks of students that scored 90+.
+
+// const marks = [91, 93, 64, 99, 86];
+
+// const filteredMarks = marks.filter((mark) => {
+//   return mark > 90;
+// });
+// console.log(filteredMarks);
+
+//? Take a number n as input from user. Create an array of numbers from 1 to n. Use reduce method to calculate sum of all numbers in an array. Use the reduce method to calculate product of all numbers in the array.
+
+let number = prompt("Enter a number:");
+let numbersArr = [];
+
+for (let i = 1; i <= number; i++) {
+  numbersArr[i - 1] = i;
+}
+let sum = numbersArr.reduce((acc, curr) => {
+  return acc + curr;
+});
+let product = numbersArr.reduce((acc, curr) => {
+  return acc * curr;
+});
+console.log(numbersArr);
+
+console.log(sum, product);

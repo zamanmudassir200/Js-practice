@@ -217,10 +217,26 @@
 
 //? For a given array with prices of 5 items -> [250,654,300,900,50]. All items have an offer of 10% OFF on them. Change the array to store final price after applying the offer.
 
+// const items = [250, 654, 300, 900, 50];
+// let discountedItems = [];
+// console.log("Before 10% discount:", items);
+// for (let item of items) {
+//   discountedItems.push(item - (item * 10) / 100);
+// }
+// console.log("After 10% discount:", discountedItems);
+// const items = [250, 654, 300, 900, 50];
+// let index = 0;
+// console.log("Before 10% discounted items:", items);
+// for (let item of items) {
+//   let discountedOffer = item / 10;
+//   items[index] = items[index] - discountedOffer;
+// console.log(`After 10% Discounted items: ${items[index]}`);
+// index++;
+// }
+
 const items = [250, 654, 300, 900, 50];
-let discountedItems = [];
-console.log("Before 10% discount:", items);
-for (let item of items) {
-  discountedItems.push(item - (item * 10) / 100);
+console.log("Before 10% discounted items:", items);
+for (let i = 0; i < items.length; i++) {
+  items[i] = items[i] - items[i] / 10;
 }
-console.log("After 10% discount:", discountedItems);
+console.log("After 10% discounted items:", items);

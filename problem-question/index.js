@@ -244,16 +244,36 @@
 //? a) remove the first company from the array
 //? b) remove the Uber & Add Ola in its place.
 //? c) add Amazon at the end
-const companies = [
-  "Bloomberg",
-  "Microsoft",
-  "Uber",
-  "Google",
-  "IBM",
-  "Netflix",
-];
-console.log(companies);
-companies.shift();
-companies.splice(1, 1, "Ola");
-companies.push("Amazon");
-console.log(companies);
+// const companies = [
+//   "Bloomberg",
+//   "Microsoft",
+//   "Uber",
+//   "Google",
+//   "IBM",
+//   "Netflix",
+// ];
+// console.log(companies);
+// companies.shift();
+// companies.splice(1, 1, "Ola");
+// companies.push("Amazon");
+// console.log(companies);
+
+//? create a function using function keyword that takes a string as an argument & returns the number of vowels in the string
+function VowelsCounter(str) {
+  let Vowelcount = 0;
+  for (let char of str) {
+    if (
+      char.toLowerCase() === "a" ||
+      char.toLowerCase() === "e" ||
+      char.toLowerCase() === "i" ||
+      char.toLowerCase() === "o" ||
+      char.toLowerCase() === "u"
+    ) {
+      console.log(`${char} - Vowel matched`);
+      Vowelcount++;
+    }
+  }
+  console.log(`Total number of vowels in ${str} : ${Vowelcount}`);
+}
+
+VowelsCounter("MUDASSIR");

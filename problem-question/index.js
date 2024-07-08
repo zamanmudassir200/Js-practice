@@ -234,9 +234,26 @@
 // index++;
 // }
 
-const items = [250, 654, 300, 900, 50];
-console.log("Before 10% discounted items:", items);
-for (let i = 0; i < items.length; i++) {
-  items[i] = items[i] - items[i] / 10;
-}
-console.log("After 10% discounted items:", items);
+// const items = [250, 654, 300, 900, 50];
+// console.log("Before 10% discounted items:", items);
+// for (let i = 0; i < items.length; i++) {
+//   items[i] = items[i] - items[i] / 10;
+// }
+// console.log("After 10% discounted items:", items);
+//? Create an array to store companies => "Bloomberg", "Microsoft", "Uber", "Google",  "IBM",  "Netflix"
+//? a) remove the first company from the array
+//? b) remove the Uber & Add Ola in its place.
+//? c) add Amazon at the end
+const companies = [
+  "Bloomberg",
+  "Microsoft",
+  "Uber",
+  "Google",
+  "IBM",
+  "Netflix",
+];
+console.log(companies);
+companies.shift();
+companies.splice(1, 1, "Ola");
+companies.push("Amazon");
+console.log(companies);

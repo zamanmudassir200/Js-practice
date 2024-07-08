@@ -87,40 +87,40 @@
 // fizzBuzz();
 
 //? Problem: Write a function removeDuplicates that takes an array of numbers as an argument and returns a new array with duplicate elements removed.
-// const arr = [1, 1, 3, 1, 4, 5, 2];
-// const removeDuplicates = (arr) => {
-// let duplicateArr = [];
-// const removedDuplicateElement = arr.reduce((acc, num) => {
-//   let duplicate = acc !== num || num !== acc;
-//   console.log(duplicate);
-//   return duplicateArr.push(duplicate);
-// });
-// console.log(removedDuplicateElement);
-// };
-// removeDuplicates(arr);
-
+const arr = [1, 1, 3, 1, 4, 5, 2];
+const removeDuplicates = (arr) => {
+  let uniqueArray = [];
+  arr.forEach((num) => {
+    if (!uniqueArray.includes(num)) {
+      uniqueArray.push(num);
+    }
+  });
+  return uniqueArray;
+};
+const printUniqueArr = removeDuplicates(arr);
+console.log(printUniqueArr);
 //? Problem: Write a function countVowels that takes a string as an argument and returns the number of vowels in the string.
 
-const countVowels = (str) => {
-  let vowelMatched = 0;
+// const countVowels = (str) => {
+//   let vowelMatched = 0;
 
-  for (let i = 0; i < str.length; i++) {
-    console.log(str[i]);
-    let vowels = "aeiou";
-    let splittedVowels = vowels.split("");
-    splittedVowels.map((vowelLetter) => {
-      if (str[i] === vowelLetter) {
-        console.log(`${vowelLetter} Vowel matched with ${str[i]}`);
-        vowelMatched++;
-      } else {
-        console.log("No vowel matched");
-      }
-    });
-  }
-  console.log(
-    `Number of ${
-      vowelMatched > 1 ? "Vowels" : "Vowel"
-    } matched in "${str}" : ${vowelMatched}`
-  );
-};
-countVowels("us");
+//   for (let i = 0; i < str.length; i++) {
+//     console.log(str[i]);
+//     let vowels = "aeiou";
+//     let splittedVowels = vowels.split("");
+//     splittedVowels.map((vowelLetter) => {
+//       if (str[i] === vowelLetter) {
+//         console.log(`${vowelLetter} Vowel matched with ${str[i]}`);
+//         vowelMatched++;
+//       } else {
+//         console.log("No vowel matched");
+//       }
+//     });
+//   }
+//   console.log(
+//     `Number of ${
+//       vowelMatched > 1 ? "Vowels" : "Vowel"
+//     } matched in "${str}" : ${vowelMatched}`
+//   );
+// };
+// countVowels("mudassir");

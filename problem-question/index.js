@@ -178,10 +178,23 @@
 
 //? print all the even numbers from 0 to 100
 
-for (let num = 0; num <= 100; num++) {
-  if (num % 2 === 0) {
-    console.log("Even:", num);
-  } else {
-    console.log("Odd:", num);
+// for (let num = 0; num <= 100; num++) {
+//   if (num % 2 === 0) {
+//     console.log("Even:", num);
+//   } else {
+//     console.log("Odd:", num);
+//   }
+// }
+
+//? create a game where you start with any random game number. Ask the user to keep guessing the game number untill the user enters correct number
+
+let randomNumber = Math.floor(Math.random() * 20);
+console.log(randomNumber);
+let userInput = prompt("Guess the number what am i thinking: ");
+while (userInput != randomNumber) {
+  userInput = prompt("Try again please 😊");
+  if (userInput == randomNumber) {
+    alert("Hurray! You have guessed the number");
+    break;
   }
 }
